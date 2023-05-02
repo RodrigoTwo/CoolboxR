@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+:root{
+    --principal:white;
+    --negro:black;
+    --color-3: rgb(4, 63, 4);
+    --align-title: left;
+    --padding-container: 100px 0;
+    --width-container: 90%;
+    --max-width-container: 1200px;
+    --padding-btn: 20px 35px;
+    --height-shape: 180em
+    /*colores*/
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    /*tipo de letra*/
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+
+}
+
+
+header{
+    border-bottom: 1px solid white;
+    background-color: var(--principal);
+    color: var(--negro);
+    text-align: center;
+}
+
+
+.navbar{
+    border-bottom: 1px solid black;
+}
+
+nav a{
+    font-size: 20px;
+    margin-right: 10px;   
+    text-transform: uppercase;
+    font-size: 1em;
+}
+.nav-item a:hover{
+    background-color: var(--success);
+    border-radius: 10px;
+    box-shadow: 0 5px 5px var(--color-3);
+    transition: 0.2s; 
+}
+@media screen and (max-width:500px) {
+    .navbar-brand img{
+        margin-left: 35%;
+    }
+}
+a.enlacelogo{
+    margin: 0px;
+}
+*, ::after, ::before {
+    box-sizing: none;
+}
+.bg-light {
+    background-color: white!important;
+}
+
+/*animacion del menu*/
+.container .collapse .nav-item a:hover{
+    color: white;
+}
+
+
+
+/*25 AÑOS */
+.derecho h1{
+    font-size: 3em;
+    text-align: center;
+    color: var(--principal);
+    margin-top: 20px;
+}
+.contenido{
+    width: 1020px;
+    margin: 0px auto;
+    background-color: var(--principal);
+}
+
+.derecho{
+    margin: 3% 0% 5% 48%;
+    background: var(--success);
+    border-radius: 50px;
+}
+
+@media screen and (max-width:500px) {
+    .derecho p{
+        margin: -2% 6% 1% 6%;
+        text-align: justify;
+    }
+}
+.derecho p{
+    height: 175px;
+    margin: 1% 6% 6% 6%;
+    color: var(--principal);
+}
+.izquierdo img{
+    margin-top: 22%;
+    border-radius: 20px;
+    margin-left: 10%;
+}
+
+@media screen and (max-width:500px) {
+    .Nosotros img{
+        margin-left: 0px;
+        margin-bottom: 0%;
+        margin-top: -25%;
+        
+    }
+}
+.Nosotros img{
+    width: 100%;
+    margin-bottom: -75%;
+
+
+}
+@media screen and (max-width:500px){
+    .derecho{
+        padding-bottom: 6%;
+        width: 95%;
+        margin-left: 11.5px;
+        margin-top: 50%;
+    }
+}
+/*------------------------------------1-----------------------------------------------*/
+
+.container__1 .derechox{
+    margin: 3% 20% 5% 1.5%;
+    padding-right: 35%;
+    background: var(--success);
+    border-radius: 50px;
+}
+@media screen and (max-width:500px) {
+    .container__1 .derechox{
+        width: 85%;
+        margin: 3% 0% 5% 8%;
+        padding-right: 2%;
+        border-radius: 50px;
+    }
+}
+.container__1 p{
+    color: var(--principal);
+    font-size: 1.6em;
+    text-align: justify;
+    margin: 2% 0% 2% 3.8%;
+
+} 
+.container__1 h1{
+    font-size: 3em;
+    text-align: center;
+    color: var(--principal);
+    margin-top: 2%;
+    margin-right: -10%;
+}
+.container__1 img{
+    width: 50%;
+    margin-top: -43.5%;
+    margin-left: 49%;
+    border-radius: 40px;
+    z-index: 1;
+}
+@media screen and (max-width:500px) {
+    .container__1 img{
+        width: 85%;
+        margin-left: 7.5%;
+        margin-top: 1.5%;
+        border: 2px solid var(--success);
+        margin-bottom: 4%;
+    }   
+}
+
+.vermas{
+    margin-left: 42%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+}
+.vermas:hover{
+    background: rgb(230, 170, 60);
+    color: white;
+    border-color: rgb(230, 170, 60);
+    font-style: italic;
+    transition: 0.5s;
+}
+@media screen and (max-width:500px){
+    .container__1 p{
+        font-size: 1em;
+    }
+    .container__1 h1{
+        font-size: 2em;
+    }
+}
+/*-------------------------------------2----------------------------------------------*/
+.container__2 .derechoo{
+    margin: 3% 1% 2% 20%;
+    padding-left: 35%;
+    padding-bottom: 1%;
+    background: var(--success);
+    border-radius: 50px;   
+}
+
+.container__2 p{
+    color: var(--principal);
+    font-size: 1.1em;
+    text-align: justify; 
+    font-style: normal;
+    margin: 0% 3.5% 2% -2%;
+} 
+
+.container__2 h1{
+    font-size: 3em;
+    text-align: center;
+    color: var(--principal);
+    padding-top: 5%;
+    margin-right: 10%;
+}
+.container__2 img{
+    border-radius: 40px;
+    width: 50% ;
+    margin-bottom: -41.9%;
+    margin-left: 1.5%;
+    z-index: 1;
+}
+@media screen and (max-width:500px){
+    .container__2 .derechoo{
+        width: 85%;
+        padding-left: 0%; 
+        margin: 3% 0% 20% 8%;
+    }
+    .container__2 img{
+        width: 85%;
+        margin-bottom: -238%;
+        margin-left: 7.5%;
+        margin-top: 5%;
+    }
+    .container__2 h1{
+        font-size: 2em;
+        padding-top: 5%;
+        margin-right: 0%;
+    }
+    .container__2 p{
+        margin: 0% 5% 2% 5%;
+    }
+     
+}
+/*--------------------------------------3---------------------------------------------*/
+
+h1 {
+    font-size: 2em;
+    color: var(--principal);
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    font-size: 3em;
+    
+}
+
+.container__3 .derechooo{
+    margin: 3% 20% 5% 1.5%;
+    padding-right: 35%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    background: var(--success);
+    border-radius: 50px;
+    
+}
+.container__3 p{
+    margin: 2% 0% 2% 1%;
+    color: var(--principal);
+    font-size: 1.6em;
+    text-align: justify;
+    font-style: normal;
+} 
+.derechooo h1{
+    font-size: 3em;
+    text-align: center;
+    color: var(--principal);
+    margin-top: 2%;
+    margin-left: 29px;
+}
+.container__3 img{
+    width: 50%;
+    border-radius: 40px;
+    margin-top: -44%;
+    margin-left: 48.8%;
+
+}
+@media screen and (max-width:500px) {
+    .container__3 .derechooo{
+        width: 85%;
+        margin-left: 15px;
+        background: var(--success);
+        border-radius: 50px;
+        padding-right: 0%;
+        margin: 48.5% 3% 5% 8%;
+        padding-right: 2%;
+        border-radius: 50px;
+    }
+    .container__3 img{
+        width: 85%;
+        margin-left: 7.5%;
+        margin-top: 4%;
+        margin-bottom: 5%;
+    }
+    .container__3 p{
+        color: var(--principal);
+        text-align: justify;
+        font-size: 1em;
+    }
+    .container__3 h1{
+        font-size: 2em;
+    }
+}
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/*contenido*/
+
+.Nosotros article{
+    border: 2px solid var(--success);
+    border-radius: 50px;
+    box-shadow: 0 15px 60px 0 var(--success);
+
+}
+
+/*course*/
+.container__cabecera{
+    border-radius: 20px;
+
+}
+.container__primary{
+    margin: 2% 0% 2% 2%;
+}
+
+.container__img{
+    margin-right: 80%;
+}   
+
+.container__secundary{
+    background: var(--color-3);
+    margin: 2% 2% 20% 50%;
+    border-radius: 50px;
+
+}
+.container__text {
+    color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 15px 60px 0 var(--color-3);
+    margin: 20px 0 20px;
+    
+}
+.buttom{
+    color: var(--negro);
+    text-decoration: none;
+    background-color: transparent;
+    background: var(--principal);
+}
+/*carrusel*/
+.carousel-control-next, .carousel-control-prev {
+    background: none;
+    border: none;
+}
+.container__carrusel{
+    border-radius: 50%;
+}
+
+
+/*pie de página*/
+footer{
+    border-top: 1px solid black;
+    padding: 1.5%;
+}
+.pie-pagina{
+    width: 100%;
+    background-color: white;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 235px;
+    height: 140px;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: black;
+    margin-bottom: 25px;
+    font-size: 20px;
+    height: 45px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: black;
+    margin-bottom: 10px;
+    height: 25px;
+}
+.pie-pagina .grupo-1 .redsocial a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .redsocial a:hover{
+    color: green;
+}
+.pie-pagina .grupo-2{
+    background-color: rgb(4, 63, 4);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+.Sobren{
+    margin-top: 5%;
+    margin-left: 20%;
+}
+.Contacto{
+    margin-top: 5%;
+    margin-left: 40%;
+}
+.Politica{
+    margin-left: 18%;
+}
+.Terminos{
+    margin-left: 15%;
+}
+.redsocial{
+    margin-left: 34%;
+}
+a:hover {
+    color: black;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:500px){
+    .pie-pagina .grupo-1{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px ;
+        padding: 45px 0px;
+    }
+    .pie-pagina .grupo-1 .box figure{
+        width: 100%;
+    }
+    .pie-pagina .grupo-2{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width:500px){
+    .redsocial{
+        margin-left: 32%;
+    }
+}
+    
+@media screen and (max-width:500px){
+    .Sobren{
+        margin-left: 30%;
+    }
+    .Contacto{
+        margin-left: 36%;
+    }
+    .Terminos{
+        margin-left: 28%;
+        text-decoration: underline;
+    } 
+    .Politica{
+        margin-left: 30% ;
+        text-decoration: underline;
+    }   
+}
+

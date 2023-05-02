@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+:root{
+    --principal:white;
+    --negro:black;
+    --color-3: rgb(4, 63, 4);
+    --align-title: left;
+    --padding-container: 100px 0;
+    --width-container: 90%;
+    --max-width-container: 1200px;
+    --padding-btn: 20px 35px;
+    --height-shape: 180em
+    /*colores*/
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    /*tipo de letra*/
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+
+}
+
+/*cabecera*/
+
+header{
+    border-bottom: 1px solid black;
+    background-color: var(--principal);
+    color: var(--negro);
+    text-align: center;
+}
+
+nav a{
+    font-size: 20px;
+    margin-right: 10px;   
+    text-transform: uppercase;
+    font-size: 1em;
+}
+.nav-item a:hover{
+    background-color: var(--success);
+    border-radius: 10px;
+    box-shadow: 0 5px 5px var(--color-3);
+    transition: 0.2s; 
+}
+@media screen and (max-width:500px) {
+    .navbar-brand img{
+        margin-left: 35%;
+    }
+}
+
+*, ::after, ::before {
+    box-sizing: none;
+}
+.bg-light {
+    background-color: white!important;
+}
+.navbar-nav .nav-link {
+    text-align: center;
+    align-items: center;
+    padding-inline: 100px;
+}
+li {
+    text-align: center;
+    align-items: center;
+}
+
+/*animacion del menu*/
+.container .collapse .nav-item a:hover{
+    color: white;
+}
+
+.form-row{
+    margin-top: 4%;
+}
+/*formulario*/
+.contactanos__texto{
+    border-radius: 20px;
+    background: var(--success);
+    box-shadow: 0 10px 30px 0 var(--color-3);
+    border: var(--success);
+    margin-top: 4.3%;
+    margin-bottom: 5%;
+}
+.contactanos__texto>h1{
+    font-weight: 800;
+    border-radius: 20px;
+    background: var(--success);
+    box-shadow: 0 10px 30px 0 var(--color-3);
+    font-size: 13mm;
+    border: var(--success);
+}
+@media screen and (max-width:500px) {
+    .contactanos__texto{
+        width: 100%;
+    }
+}
+.contactanos {
+    width: 50%;
+    border-color: 20px solid black;
+}
+@media screen and (max-width:500px) {
+    .contactanos{
+        width: 100%;
+    }
+}
+.contactanos .form-group{
+    width: 85%;
+    margin-left: 5%;
+}
+.contactanos__texto h1{
+    margin: 2% 0% 2% 0%;
+}
+.contactanos__img img{
+    width: 95%;
+    margin-top: 10%;
+    margin-left: 1.5%;
+    border-radius: 20px;
+}
+@media screen and (max-width:500px) {
+    .contactanos__img img{
+        margin-left: -1%;
+    }
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    margin-left: 5%;
+}
+/*mapa*/
+.container__mapa{ 
+    border-radius: 20px;
+    background: var(--success);
+    box-shadow: 0 10px 30px 0 var(--color-3);
+    font-size: 6mm;
+}
+h1 {
+    margin: 20px;
+    padding: 20px;
+    color: var(--principal);
+    text-align: center;
+    border: var(--success);
+    border-radius: 20px;
+    font-size: 11mm;
+    font-weight: 700;
+}
+.nuestra__ubicacion{
+    border-radius: 20px;
+    background: var(--success);
+    box-shadow: 0 10px 30px 0 var(--color-3);
+    margin-bottom: 6%;
+    margin-top: 5%;
+}
+pre{
+    font-size: 1em;
+    margin: 10px 10px;
+    padding: 20px;
+    font-family: var(--font-family-sans-serif);
+    color: var(--principal);
+    text-align: center;
+}
+.container iframe{
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 2%;
+}
+
+/*pie de página*/
+footer{
+    border-top: 1px solid black;
+    padding: 1.5%;
+}
+.pie-pagina{
+    width: 100%;
+    background-color: white;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 235px;
+    height: 140px;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: black;
+    margin-bottom: 25px;
+    font-size: 20px;
+    height: 45px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: black;
+    margin-bottom: 10px;
+    height: 25px;
+}
+.pie-pagina .grupo-1 .redsocial a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .redsocial a:hover{
+    color: green;
+}
+.pie-pagina .grupo-2{
+    background-color: rgb(4, 63, 4);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+.Sobren{
+    margin-top: 5%;
+    margin-left: 20%;
+}
+.Contacto{
+    margin-top: 5%;
+    margin-left: 40%;
+}
+.Politica{
+    margin-left: 18%;
+}
+.Terminos{
+    margin-left: 15%;
+}
+.redsocial{
+    margin-left: 34%;
+}
+a:hover {
+    color: black;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:500px){
+    .pie-pagina .grupo-1{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px ;
+        padding: 45px 0px;
+    }
+    .pie-pagina .grupo-1 .box figure{
+        width: 100%;
+    }
+    .pie-pagina .grupo-2{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width:500px){
+    .redsocial{
+        margin-left: 32%;
+    }
+}
+    
+@media screen and (max-width:500px){
+    .Sobren{
+        margin-left: 30%;
+    }
+    .Contacto{
+        margin-left: 36%;
+    }
+    .Terminos{
+        margin-left: 28%;
+        text-decoration: underline;
+    } 
+    .Politica{
+        margin-left: 30% ;
+        text-decoration: underline;
+    }   
+}
+
